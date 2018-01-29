@@ -1,0 +1,215 @@
+
+/* General Content */
+
+html {
+  font-size: 16px;
+  font-family: Helvetica;
+  color: black;
+}
+
+/* Header */
+
+header {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1.5rem;
+  min-height: 4rem;
+  right: 0;
+  left: 0;
+  border-bottom: 0.5px solid black;
+}
+
+header .company {
+  display: inline-flex;
+}
+
+.company .name {
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.logo {
+  align-self: center;
+  padding-right: .25rem;
+  min-height: 2rem;
+  padding-left: 1.5rem;
+}
+.logo img {
+  height: 3rem;
+}
+
+.name h2 {
+  display: inline-flex;
+  font-weight: bold;
+}
+.name h3 {
+  display: inline-flex;
+  color: #8F9FAC;
+}
+
+.menu {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: inline-flex;
+  align-items: center;
+}
+
+.menu ul li {
+  margin: 1rem;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s linear;
+}
+
+.menu ul li a:hover {
+  font-weight: bold;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* Content */
+
+.content {
+  z-index: 1;
+  padding-top: 7rem;
+}
+
+
+/*                              Content - Start Learning */
+
+.classes {
+  display: flex;
+  background-color: white;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.title h2 {
+  font-family: Arial;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: auto;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.classes .title h2 {
+  color: black;
+}
+
+.course-box {
+  display: block;
+  background-color: white;
+  flex-direction: column;
+  max-width: 40%;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+
+.course-box a {
+  display: block;
+  background-color: none;
+  height: 90%;
+  color: black;
+  transition: all 0.2s linear;
+  text-decoration: none;
+}
+
+
+
+.course-box img {
+  max-width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1.5rem;
+  min-height: 4rem;
+  right: 0;
+  color: black;
+  border-top: 0.5px solid black;
+}
+
+footer .company {
+  align-self: center;
+}
+
+footer .menu {
+  min-width: 10rem;
+}
+
+footer .menu ul li a {
+  color: black;
+}
+
+/* MEDIA - */
+
+@media only screen and (max-width: 840px) {
+
+header {
+  position: static;
+  justify-content: center;
+  padding: 1.5rem 0 1.5rem 0;
+  min-height: 2rem;
+ }
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+ }
+
+.mobile-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 4rem;
+ }
+
+header .company,
+.menu {
+  display: none;
+ }
+
+.content {
+  padding-top: 0rem;
+ }
+}
+
+@media only screen and (max-width: 1024px) {
+
+footer {
+  background-color: white;
+  color: black;
+  justify-content: center;
+ }
+}
