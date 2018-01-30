@@ -3,7 +3,7 @@
 
 html {
   font-size: 16px;
-  font-family: Helvetica;
+  font-family: 'Open Sans', sans-serif;
   color: black;
 }
 
@@ -22,32 +22,28 @@ header {
   border-bottom: 0.5px solid black;
 }
 
-header .company {
+header .top-left {
   display: inline-flex;
 }
 
-.company .name {
+.top-left .name {
   align-self: center;
   font-size: 1.5rem;
 }
 
-.logo {
+.profile {
   align-self: center;
-  padding-right: .25rem;
+  padding-right: .75rem;
   min-height: 2rem;
   padding-left: 1.5rem;
 }
-.logo img {
-  height: 3rem;
+.profile img {
+  height: 4rem;
 }
 
 .name h2 {
   display: inline-flex;
-  font-weight: bold;
-}
-.name h3 {
-  display: inline-flex;
-  color: #8F9FAC;
+  font-weight: 700;
 }
 
 .menu {
@@ -73,7 +69,7 @@ header .company {
 }
 
 .menu ul li a:hover {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .mobile-nav {
@@ -87,20 +83,11 @@ header .company {
   padding-top: 7rem;
 }
 
-
-/*                              Content - Start Learning */
-
-.classes {
+.map {
   display: flex;
   background-color: white;
   flex-flow: wrap;
   justify-content: center;
-}
-
-.title h2 {
-  font-family: Arial;
-  font-size: 3rem;
-  line-height: 3rem;
 }
 
 .container {
@@ -109,19 +96,9 @@ header .company {
   justify-content: auto;
 }
 
-.title {
-  text-align: center;
-  font-weight: bold;
-  font-size: 2rem;
-  padding: 2rem;
-}
-
-.classes .title h2 {
-  color: black;
-}
-
-.course-box {
+.google-map {
   display: block;
+  position: relative;
   background-color: white;
   flex-direction: column;
   max-width: 40%;
@@ -129,21 +106,9 @@ header .company {
   border-radius: 0.5rem;
 }
 
-.course-box a {
-  display: block;
-  background-color: none;
-  height: 90%;
-  color: black;
-  transition: all 0.2s linear;
-  text-decoration: none;
+.google-map  iframe {
+
 }
-
-
-
-.course-box img {
-  max-width: 100%;
-}
-
 
 /* Footer */
 
