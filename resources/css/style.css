@@ -1,0 +1,164 @@
+
+/* General Content */
+
+html {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+/* Header */
+
+header {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1.5rem;
+  min-height: 4rem;
+  right: 0;
+  left: 0;
+  border-bottom: 0.5px solid black;
+}
+
+header .top-left {
+  display: inline-flex;
+}
+
+.top-left .name {
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.profile {
+  align-self: center;
+  padding-right: .75rem;
+  min-height: 2rem;
+  padding-left: 1.5rem;
+}
+.profile img {
+  height: 4rem;
+}
+
+.name h2 {
+  display: inline-flex;
+  font-weight: 700;
+}
+
+.menu {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: inline-flex;
+  align-items: center;
+}
+
+.menu ul li {
+  margin: 1rem;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s linear;
+}
+
+.menu ul li a:hover {
+  font-weight: 700;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* Content */
+
+.content {
+  z-index: 1;
+  padding-top: 7rem;
+}
+
+.map {
+  display: flex;
+  background-color: white;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 1.5rem;
+  min-height: 4rem;
+  right: 0;
+  color: black;
+  border-top: 0.5px solid black;
+}
+
+footer .company {
+  align-self: center;
+}
+
+footer .menu {
+  min-width: 10rem;
+}
+
+footer .menu ul li a {
+  color: black;
+}
+
+/* MEDIA - */
+
+@media only screen and (max-width: 840px) {
+
+header {
+  position: static;
+  justify-content: center;
+  padding: 1.5rem 0 1.5rem 0;
+  min-height: 2rem;
+ }
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+ }
+
+.mobile-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 4rem;
+ }
+
+header .company,
+.menu {
+  display: none;
+ }
+
+.content {
+  padding-top: 0rem;
+ }
+}
+
+@media only screen and (max-width: 1024px) {
+
+footer {
+  background-color: white;
+  color: black;
+  justify-content: center;
+ }
+}
