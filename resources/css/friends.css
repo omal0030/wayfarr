@@ -3,7 +3,7 @@
 
 html {
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: black;
 }
 
@@ -83,7 +83,7 @@ header .top-left {
   padding-top: 7rem;
 }
 
-.my-maps {
+.my-friends {
   display: flex;
   background-color: white;
   flex-flow: wrap;
@@ -98,7 +98,7 @@ header .top-left {
 }
 
 .title h2 {
-  font-weight: 400;
+  font-weight: 700; /* Friends font weight */
   font-size: 3rem;
   line-height: 3rem;
 }
@@ -109,28 +109,29 @@ header .top-left {
   justify-content: center;
 }
 
-.city-box {
+.friend-box {
   display: block;
   background-color: white;
   flex-direction: column;
-  max-width: 30%; /* 40% for two cities per row */
+  max-width: 15%; /* 40% for two cities per row */
   margin: 1rem;
 }
 
-.city-box a {
+.friend-box a {
   display: block;
   background-color: none;
   height: 80%; /* Adjusts the size of the box around the pictures */
   color: black;
   transition: all 0.2s linear;
   text-decoration: none;
+
 }
 
-.city-box a:hover {
+.friend-box a:hover {
   filter: opacity(80%);
 }
 
-.city-box img {
+.friend-box img {
   max-width: 100%;
 }
 
@@ -141,7 +142,8 @@ header .top-left {
 }
 
 .text h2 {
-  font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
   font-weight: 400;
   padding-bottom: 1rem;
 }
@@ -191,7 +193,7 @@ footer .menu ul li a {
   max-width: 100%;
 }
 
-.city-box {
+.friend-box {
   max-width: 90%;
  }
 
@@ -210,7 +212,7 @@ footer .menu ul li a {
   max-width: 100%;
 }
 
-.city-box {
+.friend-box {
   max-width: 45%;
  }
 
