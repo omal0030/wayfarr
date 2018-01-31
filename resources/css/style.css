@@ -126,6 +126,16 @@ header .top-left {
 
 }
 
+.city-box .image h2 {
+  font-weight: 700; /* Email Entry font weight */
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+label {
+  font-size: 1rem;
+  line-height: 3rem;
+}
 
 .city-box img {
   max-width: 100%;
