@@ -11,21 +11,7 @@
       gtag('config', 'UA-113327123-1');
 
 
-      var $form = $('form#test-form'),
-          url = 'https://script.google.com/macros/u/0/s/AKfycby1wXDn0sTKYvmp2J7VhSMcA-XfBxRB1phvP7ZpPCL9Jkf_FDs/exec'
 
-      $('#submit-form').on('click', function(e) {
-        e.preventDefault();
-        var jqxhr = $.ajax({
-          url: url,
-          method: "GET",
-          dataType: "json",
-          data: $form.serializeObject()
-        }).success(
-          // do something
-        );
-       })
-       
     </script>
 
     <meta charset="utf-8">
@@ -33,13 +19,9 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>wayfarr</title>
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/email.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway"
     rel="stylesheet">
-
-
-
-
   </head>
 
   <body>
@@ -52,14 +34,13 @@
           <!--<img src="resources/images/logoweb.jpg" alt="logo"/>-->
         </div>
         <div class="name">
-          <h2>wayfarr</h2>
+          <h2><a href="./index.html">wayfarr</h2>
         </div>
       </div>
 
       <nav class="menu">
         <ul>
           <li><a href="./mymapsko.html">Sign In</a></li>
-          <li><a href="./index.html">Sign Up</a></li>
         </ul>
       </nav>
 
@@ -80,49 +61,37 @@
     </header>
 
 <!-- Content -->
+<div class="content">
 
-
-    <div class="content">
-
-      <div class="my-maps">
-        <div class="title">
-          <h2></h2>
-        </div>
-
-        <div class="container">
-
-          <div class="city-box"><a href="#">
-            <div class="image">
-
-<!-- TITLE YOUR FORM -->
-            <h1></h1>
-            <h2>Right now, wayfarr is a limited-use beta.</h2>
-
-          <form id="test-form">
-
-            <div>
-              <label>Please enter your email address to get notified when we
-                launch.</label>
-              <input type="text" name="emailaddress" placeholder="Email Address"/>
-            </div>
-
-            <div>
-              <button type="submit"id="submit-form">Submit</button>
-            </div>
-
-          </form>
-
-            </div>
-            <div class="text">
-              <h2></h2>
-            </div></a>
-          </div>
-
-        </div>
-      </div>
+  <div class="my-maps">
+    <div class="title">
+      <h2></h2>
     </div>
 
+    <div class="container">
 
+      <div class="city-box"><a href="#">
+        <div class="image">
+          <h2>Right now, wayfarr is in beta.</h2>
+          <h3>Please enter your email address to get notified
+             when we launch.</h3>
+        </div></a>
+      </div>
+
+<!-- TITLE YOUR FORM -->
+<!-- START CODING YOUR FORM -->
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSc_XH_w5jsRmU1kohuLNpUASc5qqhwY1xOsLLq2Qvc5np74rQ/formResponse">
+
+<!-- SINGLE LINE TEXT FIELD -->
+              <label for="email"></label>
+                <input name="emailAddress" type="text" id="email" size="35"/>
+
+<!-- SUBMIT BUTTON -->
+                <input class="button" type="submit" value="Submit">
+            </form>
+          </div>
+       </div>
+   </div>
 <!-- Footer -->
 
     <footer>

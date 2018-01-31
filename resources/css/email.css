@@ -37,6 +37,7 @@ header .top-left {
   min-height: 2rem;
   padding-left: 1.5rem;
 }
+
 .profile img {
   height: 4rem;
 }
@@ -44,6 +45,12 @@ header .top-left {
 .name h2 {
   display: inline-flex;
   font-weight: 700;
+  text-decoration: none;
+}
+
+.name h2 a {
+  text-decoration: none;
+  color: black;
 }
 
 .menu {
@@ -80,32 +87,12 @@ header .top-left {
 
 .content {
   z-index: 1;
-  padding-top: 7rem;
-}
-
-.my-maps {
-  display: flex;
-  background-color: white;
-  flex-flow: wrap;
-  justify-content: center;
-}
-
-.title {
-  text-align: center;
-  font-size: 2rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.title h2 {
-  font-weight: 700; /* My Maps font weight */
-  font-size: 3rem;
-  line-height: 3rem;
+  padding-top: 12rem;
 }
 
 .container {
   display: flex;
-  flex-flow: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -113,40 +100,44 @@ header .top-left {
   display: block;
   background-color: white;
   flex-direction: column;
-  max-width: 70%; /* 40% for two cities per row */
-  margin: 2rem;
+
 }
 
 .city-box a {
   display: block;
-  background-color: none;
-  height: 80%; /* Adjusts the size of the box around the pictures */
   color: black;
   text-decoration: none;
 }
 
-.city-box img {
-  max-width: 100%;
-}
-
-.text {
-  padding-top: 1rem;
+.city-box .image h2 {
+  font-weight: 700; /* Email Entry font weight */
+  font-size: 2rem;
+  line-height: 3rem;
+  flex-flow: wrap;
+  justify-content: center;
   text-align: center;
-  min-height: 1rem;
 }
 
-.text h2 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 400;
-  padding-bottom: 1rem;
+.city-box .image h3 {
+  font-weight: 400; /* Email Entry font weight */
+  font-size: 1rem;
+  line-height: 3rem;
+  flex-flow: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
-.text h3 {
-  padding-bottom: 0rem;
-  font-weight: 400;
+form {
+  line-height: 4rem;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 19rem;
 }
 
+input {
+  line-height: 1.6rem;
+  justify-content: center;
+}
 
 /* Footer */
 
