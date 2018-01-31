@@ -10,8 +10,9 @@
 
       gtag('config', 'UA-113327123-1');
 
+
       var $form = $('form#test-form'),
-          url = 'https://script.google.com/macros/s/AKfycbwQao1rB2pQi7ZyKjt17732wR2Mw1fvdOf6rbGdvNn177KOG7Zr/exec'
+          url = 'https://script.google.com/macros/u/0/s/AKfycby1wXDn0sTKYvmp2J7VhSMcA-XfBxRB1phvP7ZpPCL9Jkf_FDs/exec'
 
       $('#submit-form').on('click', function(e) {
         e.preventDefault();
@@ -22,8 +23,7 @@
           data: $form.serializeObject()
         }).success(
           // do something
-        );
-      })
+       }
 
     </script>
 
