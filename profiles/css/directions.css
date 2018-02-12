@@ -82,13 +82,12 @@ header .top-left {
 .journal {
   display: block;
   justify-content: space-around;
-  padding: 1rem 25% 1rem 25%;
+  padding: 7rem 25% 1rem 25%;
   background-color: white;
-
 }
 
 .photo {
-  width: 75%;
+  width: 100%;
   padding: 1.11rem;
   border-radius: 5px;
   margin: 0 auto 4.44rem auto;
@@ -111,6 +110,22 @@ header .top-left {
 .photo.first {
   margin-top: 7rem;
   margin-bottom: 1.67rem;
+}
+
+.journal h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 2rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.journal h3 {
+  padding-bottom: 0.5rem;
+  padding-top: 0rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: bold;
 }
 
 .journal p {
